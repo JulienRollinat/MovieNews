@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tool="http://schemas.android.com/tools">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            tool:src="@drawable/img_bg"/>
+
+        <View
+            android:id="@+id/imageFiltre"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentTop="true"
+            android:background="#77000000" />
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ratingNote"
+            android:textColor="@android:color/white"
+            android:textSize="13pt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingNote"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:numStars="10"
+            android:saveEnabled="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_alignBottom="@+id/movieImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingNote"
+                android:background="#f2f5f7"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoClock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/clock"
+                    android:tint="#de7163"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/timeForMovie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/logoClock"
+                    android:textColor="#626362"
+                    android:text="Duration"
+                    android:textSize="6pt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/durationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10pt"
+                    android:layout_below="@+id/timeForMovie"
+                    android:layout_toRightOf="@+id/logoClock"
+                    android:textColor="#939496"
+                    android:textSize="5pt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/logoSmiley"
+                    android:layout_toRightOf="@+id/timeForMovie"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/smiley"
+                    android:tint="#de7163"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/NotationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/logoSmiley"
+                    android:textColor="#626362"
+                    android:text="Average rating"
+                    android:textSize="6pt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/notationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/NotationTitle"
+                    android:layout_toRightOf="@+id/logoSmiley"
+                    android:textColor="#939496"
+                    android:textSize="5pt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ReleaseTextView"
+            android:layout_below="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release date :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="8pt"
+            android:textColor="#393838"/>
+
+        <TextView
+            android:id="@+id/ReleaseDate"
+            android:layout_below="@+id/ReleaseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#858686"/>
+
+        <TextView
+            android:id="@+id/Overview"
+            android:layout_below="@+id/ReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview :"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="8pt"
+            android:textColor="#393838"/>
+
+        <TextView
+            android:id="@+id/movieDescription"
+            android:layout_below="@+id/Overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#858686"/>
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

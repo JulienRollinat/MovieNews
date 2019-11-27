@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_bg">
+
+    <ImageView
+    android:layout_width="75pt"
+    android:layout_height="158dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="55dp"
+    android:layout_marginTop="100dp"
+    android:src="@drawable/img_splash_logo"
+    app:layout_constraintBottom_toTopOf="@+id/editName"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="109dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="199dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="text"
+        android:singleLine="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="151dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Prénom"
+        android:inputType="text"
+        android:lineSpacingExtra="8sp"
+        android:singleLine="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textWebPassword"
+        android:lineSpacingExtra="8sp"
+        android:singleLine="false"
+        android:textColor="#696969"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <Button
+        android:id="@+id/CompteButton"
+        android:layout_width="347dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="#3f569b"
+        android:text="Créer un compte"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+</RelativeLayout>
+

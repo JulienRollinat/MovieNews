@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="7dp"
+    android:layout_height="300dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:radius="10pt"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        />
+    <View
+        android:id="@+id/movieFiltre"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:background="#77000000"
+        />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rating"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toRightOf="@+id/movieImage"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="192dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:numStars="10"
+        android:saveEnabled="true"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+         />
+
+</RelativeLayout>
